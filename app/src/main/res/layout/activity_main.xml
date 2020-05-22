@@ -38,13 +38,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="calcular"
-        android:text="Sumar" />
+        android:text="Calcular" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="aux_limpiar"
+        android:text="Limpiar" />
+
+    <Spinner
+        android:id="@+id/seleccionOperacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/lblResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
+
 </LinearLayout>
