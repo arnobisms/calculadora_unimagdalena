@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="CALCULADORA"
+        android:text="@string/titulo"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Número uno"
+        android:hint="@string/numero_uno"
         android:inputType="number" />
 
     <EditText
@@ -30,33 +30,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Número dos"
+        android:hint="@string/numero_dos"
         android:inputType="number" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
-
-        <Spinner
-            android:id="@+id/seleccionOperacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/btnSumar"
             android:layout_width="134dp"
             android:layout_height="wrap_content"
             android:onClick="calcular"
-            android:text="Calcular" />
+            android:text="@string/boton_sumar" />
 
         <Button
             android:id="@+id/btnLimpiar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="aux_limpiar"
-            android:text="Limpiar" />
+            android:text="@string/boton_limpiar" />
     </LinearLayout>
 
     <TextView
