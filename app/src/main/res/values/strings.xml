@@ -5,6 +5,8 @@
     <string name="numero_dos">Número dos</string>
     <string name="boton_sumar">Sumar</string>
     <string name="boton_limpiar">Limpiar</string>
+    <string name="error_numero_uno">Digite el numero uno</string>
+    <string name="error_numero_dos">Digite numero dos</string>
 
 
 </resources>

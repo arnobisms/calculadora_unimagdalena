@@ -40,14 +40,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean validar(){
+        String error_numero_uno, error_numero_dos;
+        error_numero_uno = getResources().getString(R.string.error_numero_uno);
+        error_numero_dos = getResources().getString(R.string.error_numero_dos);
         if(numero_uno.getText().toString().isEmpty()){
-            numero_uno.setError("Digite el numero uno");
+            numero_uno.setError(error_numero_uno);
             numero_uno.requestFocus();
             return false;
         }else{
             if(numero_dos.getText().toString().isEmpty()) {
-                numero_uno.setError("Digite el numero dos");
-                numero_uno.requestFocus();
+                numero_uno.setError(error_numero_dos);
+                numero_dos.requestFocus();
                 return false;
             }
         }
